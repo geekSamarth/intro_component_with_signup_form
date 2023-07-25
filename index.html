@@ -19,7 +19,7 @@
     <main class="intro_wrapper">
       <article class="introductory_passage">
         <h1>Learn to code by watching others</h1>
-         <p>
+        <p>
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
@@ -30,30 +30,38 @@
           <span class="offer">Try it free 7 days </span>
           then $20/mo. thereafter
         </div>
-        <form action="" class="signing_form">
+        <form action="" class="signing_form" id="form">
           <div class="form_control">
-            <input type="text" placeholder="First Name" id="firstName" class=""/>
-            <img src="./images/icon-error.svg" alt="" />
-            <small class="firstNameError">Lorem ipsum dolor sit, amet consectetur </small>
+            <input type="text" placeholder="First Name" id="firstName" />
+            <img src="./images/icon-error.svg" alt="" class="icons-error" />
+            <small class="errorText"
+              >Lorem ipsum dolor sit, amet consectetur
+            </small>
           </div>
           <div class="form_control">
-            <input type="text" placeholder="Last Name" id="lastName" class=""/>
-            <img src="./images/icon-error.svg" alt="" />
-            <small class="lastNameError">Lorem ipsum dolor sit, amet consectetur</small>
+            <input type="text" placeholder="Last Name" id="lastName" />
+            <img src="./images/icon-error.svg" alt="" class="icons-error" />
+            <small class="errorText"
+              >Lorem ipsum dolor sit, amet consectetur</small
+            >
           </div>
           <div class="form_control">
             <input
-              type="email"
+              type="text"
               placeholder="Email Address "
-              id="emailAddress" class=""
+              id="emailAddress"
             />
-            <img src="./images/icon-error.svg" alt="" />
-            <small class="emailError">Lorem ipsum dolor sit, amet consectetur</small>
+            <img src="./images/icon-error.svg" alt="" class="icons-error" />
+            <small class="errorText"
+              >Lorem ipsum dolor sit, amet consectetur</small
+            >
           </div>
           <div class="form_control">
-            <input type="password" placeholder="Password " id="password" class="" />
-            <img src="./images/icon-error.svg" alt="" />
-            <small class="passwordError">Lorem ipsum dolor sit, amet consectetur</small>
+            <input type="password" placeholder="Password" id="formPassword">
+            <img src="./images/icon-error.svg" alt="" class="icons-error" />
+            <small class="errorText"
+              >Lorem ipsum dolor sit, amet consectetur</small
+            >
           </div>
           <div class="claim">
             <button type="submit" class="btn">Claim your free trial</button>
@@ -67,5 +75,6 @@
         </form>
       </article>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
