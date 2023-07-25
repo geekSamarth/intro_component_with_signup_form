@@ -20,29 +20,29 @@
     background-color: var(--primary-color);
     background-image: url('./images/bg-intro-desktop.png');
     background-repeat: no-repeat;
-    gap: 20px;
+    gap: 70px;
 }
-.introductory_passage,.signup_form{
+.introductory_passage{
     width: 500px;
     max-width: 90%;
     font-size: 16px;
     padding: 2px;
 }
-.heading h1{
+.introductory_passage h1{
     font-size: 46px;
     line-height: 1.2;
     color: white;
     margin: 10px 0 20px 0;
 }
-.explanation p{
-    font-size: 15px;
+.introductory_passage p{
+    font-size: 16px;
     color: white;
 }
 
 .signup_form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 500px;
+    max-width: 90%;
+    font-size: 16px;
     padding: 20px;
 }
 .pricing{
@@ -53,9 +53,10 @@
     font-size: 16px;
     text-align: center;
     color: var(--grayish-blue);
+    margin-bottom: 20px;
 }
 .offer{
-    font-weight: 600;
+    font-weight: 700;
     color: white;
 }
 .signing_form{
@@ -63,9 +64,72 @@
     padding: 30px;
     border-radius: 8px;
 }
+.form_control{
+    margin-bottom: 18px;
+    position: relative;
+}
 input{
     width: 100%;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: var(--dark-blue);
     outline: none;
+    border: 1px solid var(--grayish-blue);
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+input:focus{
+    border-color: var(--dark-blue);
+}
+.input-error{
+    border-color: red;
+    color: red;
+}
+.form_control img{
+    position: absolute;
+    left: 90%;
+    top: 15%;
+    display: none;
+}
+.form_control small{
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: var(--primary-color);
+    font-weight: 500;
+    display: none;
+}
+.claim {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 15px;
+}
+.claim .btn{
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #3eb37f ;
+    border-bottom: 4px solid #3eb37f ;
+}
+.claim .btn:hover{
+    background-color: #76FF7A;;
+}
+.additional_info p{
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--grayish-blue);
+    text-align: center;
+}
+.additional_info p a{
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
 }
