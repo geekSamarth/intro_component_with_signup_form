@@ -28,9 +28,9 @@ const checkInputs = () => {
   }
   if (emailValue === "") {
     checkError(email, "Looks like it is not an email");
-  }else if(!isEmail(emailValue)){
-    checkError(email,"Email is not valid")
-  }else {
+  } else if (!isEmail(emailValue)) {
+    checkError(email, "Email is not valid");
+  } else {
     setSuccess(email);
   }
   if (passwordValue === "") {
@@ -50,6 +50,6 @@ const setSuccess = (input) => {
   let formControl = input.parentElement;
   formControl.className = "form_control";
 };
-const isEmail = (email)=>{
-    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/i.test(email);
-}
+const isEmail = (email) => {
+  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/i.test(email);
+};
